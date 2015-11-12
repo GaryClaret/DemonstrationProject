@@ -10,7 +10,7 @@ using DemonstrationProject.DomainObjects.DmCustomerBillJsonTypes;
 namespace DemonstrationProject.DomainObjects.DmCustomerBillJsonTypes
 {
 
-    internal class CallCharges
+    public class CallCharges
     {
 
         [JsonProperty("calls")]

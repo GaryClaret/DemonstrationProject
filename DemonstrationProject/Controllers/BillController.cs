@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DemonstrationProject.BusinessLogic;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,16 +9,14 @@ namespace DemonstrationProject.Controllers
 {
     public class BillController : Controller
     {
+        private ICustomerBl _customerBusiness;
+        private 
+
+        public BillController()
  
         [HttpGet]
         public ActionResult Index()
         {
-            return View();
-        }
-
-        [HttpPost]
-        public ActionResult Index()
-        {          
             return View();
         }
 

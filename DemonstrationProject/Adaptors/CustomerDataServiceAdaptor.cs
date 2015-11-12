@@ -8,7 +8,7 @@ namespace DemonstrationProject.Adaptors
 {
     public class CustomerDataServiceAdaptor : ICustomerDataServiceAdaptor
     {
-        public DmCustomerBill ProvideCustomerBill()
+        public object ProvideCustomerBill()
         {
             throw new NotImplementedException();
         }

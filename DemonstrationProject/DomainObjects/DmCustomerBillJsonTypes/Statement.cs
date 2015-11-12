@@ -10,7 +10,7 @@ using DemonstrationProject.DomainObjects.DmCustomerBillJsonTypes;
 namespace DemonstrationProject.DomainObjects.DmCustomerBillJsonTypes
 {
 
-    internal class Statement
+    public class Statement
     {
 
         [JsonProperty("generated")]

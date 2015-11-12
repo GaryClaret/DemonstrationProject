@@ -9,6 +9,6 @@ namespace DemonstrationProject.Adaptors
 {
     public interface ICustomerDataServiceAdaptor
     {
-        DmCustomerBill ProvideCustomerBill();
+        public object ProvideCustomerBill();
     }
 }

@@ -1,0 +1,12 @@
+\\psf\home\Documents\Visual Studio 2012\Projects\DemonstrationProject\DemoAcceptanceTests\bin\Debug\Default.srprofile
+\\psf\home\Documents\Visual Studio 2012\Projects\DemonstrationProject\DemoAcceptanceTests\bin\Debug\DemoAcceptanceTests.dll.config
+\\psf\home\Documents\Visual Studio 2012\Projects\DemonstrationProject\DemoAcceptanceTests\bin\Debug\DemoAcceptanceTests.dll
+\\psf\home\Documents\Visual Studio 2012\Projects\DemonstrationProject\DemoAcceptanceTests\bin\Debug\DemoAcceptanceTests.pdb
+\\psf\home\Documents\Visual Studio 2012\Projects\DemonstrationProject\DemoAcceptanceTests\bin\Debug\SimpleInjector.dll
+\\psf\home\Documents\Visual Studio 2012\Projects\DemonstrationProject\DemoAcceptanceTests\bin\Debug\SpecRun.SpecFlowPlugin.dll
+\\psf\home\Documents\Visual Studio 2012\Projects\DemonstrationProject\DemoAcceptanceTests\bin\Debug\TechTalk.SpecFlow.dll
+\\psf\home\Documents\Visual Studio 2012\Projects\DemonstrationProject\DemoAcceptanceTests\bin\Debug\TechTalk.SpecRun.dll
+\\psf\home\Documents\Visual Studio 2012\Projects\DemonstrationProject\DemoAcceptanceTests\bin\Debug\SimpleInjector.xml
+\\psf\home\Documents\Visual Studio 2012\Projects\DemonstrationProject\DemoAcceptanceTests\obj\Debug\DemoAcceptanceTests.csprojResolveAssemblyReference.cache
+\\psf\home\Documents\Visual Studio 2012\Projects\DemonstrationProject\DemoAcceptanceTests\obj\Debug\DemoAcceptanceTests.dll
+\\psf\home\Documents\Visual Studio 2012\Projects\DemonstrationProject\DemoAcceptanceTests\obj\Debug\DemoAcceptanceTests.pdb

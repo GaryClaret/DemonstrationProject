@@ -1,0 +1,6 @@
+\\psf\home\Documents\Visual Studio 2012\Projects\DemonstrationProject\DemoUnitTests\bin\Debug\DemoUnitTests.dll
+\\psf\home\Documents\Visual Studio 2012\Projects\DemonstrationProject\DemoUnitTests\bin\Debug\DemoUnitTests.pdb
+\\psf\home\Documents\Visual Studio 2012\Projects\DemonstrationProject\DemoUnitTests\bin\Debug\SimpleInjector.dll
+\\psf\home\Documents\Visual Studio 2012\Projects\DemonstrationProject\DemoUnitTests\bin\Debug\SimpleInjector.xml
+\\psf\home\Documents\Visual Studio 2012\Projects\DemonstrationProject\DemoUnitTests\obj\Debug\DemoUnitTests.dll
+\\psf\home\Documents\Visual Studio 2012\Projects\DemonstrationProject\DemoUnitTests\obj\Debug\DemoUnitTests.pdb

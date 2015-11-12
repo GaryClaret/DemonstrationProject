@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/DemoWebService.RawObjects.RawCustomerBillJsonTypes" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/DemoWebService.RawObjects.RawCustomerBillJsonTypes" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="CallCharges">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Calls" nillable="true" type="tns:ArrayOfCall" />
+      <xs:element minOccurs="0" name="Total" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CallCharges" nillable="true" type="tns:CallCharges" />
+  <xs:complexType name="ArrayOfCall">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Call" nillable="true" type="tns:Call" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCall" nillable="true" type="tns:ArrayOfCall" />
+  <xs:complexType name="Call">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Called" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cost" type="xs:double" />
+      <xs:element minOccurs="0" name="Duration" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Call" nillable="true" type="tns:Call" />
+  <xs:complexType name="Package">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Subscriptions" nillable="true" type="tns:ArrayOfSubscription" />
+      <xs:element minOccurs="0" name="Total" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Package" nillable="true" type="tns:Package" />
+  <xs:complexType name="ArrayOfSubscription">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Subscription" nillable="true" type="tns:Subscription" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSubscription" nillable="true" type="tns:ArrayOfSubscription" />
+  <xs:complexType name="Subscription">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cost" type="xs:double" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Subscription" nillable="true" type="tns:Subscription" />
+  <xs:complexType name="SkyStore">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BuyAndKeep" nillable="true" type="tns:ArrayOfBuyAndKeep" />
+      <xs:element minOccurs="0" name="Rentals" nillable="true" type="tns:ArrayOfRental" />
+      <xs:element minOccurs="0" name="Total" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SkyStore" nillable="true" type="tns:SkyStore" />
+  <xs:complexType name="ArrayOfBuyAndKeep">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BuyAndKeep" nillable="true" type="tns:BuyAndKeep" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBuyAndKeep" nillable="true" type="tns:ArrayOfBuyAndKeep" />
+  <xs:complexType name="BuyAndKeep">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cost" type="xs:double" />
+      <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BuyAndKeep" nillable="true" type="tns:BuyAndKeep" />
+  <xs:complexType name="ArrayOfRental">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Rental" nillable="true" type="tns:Rental" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRental" nillable="true" type="tns:ArrayOfRental" />
+  <xs:complexType name="Rental">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cost" type="xs:double" />
+      <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Rental" nillable="true" type="tns:Rental" />
+  <xs:complexType name="Statement">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Due" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Generated" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Period" nillable="true" type="tns:Period" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Statement" nillable="true" type="tns:Statement" />
+  <xs:complexType name="Period">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="From" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="To" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Period" nillable="true" type="tns:Period" />
+</xs:schema>
