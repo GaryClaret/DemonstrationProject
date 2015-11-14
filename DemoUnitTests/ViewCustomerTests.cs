@@ -19,12 +19,11 @@ namespace DemoUnitTests
         public void WhenContactWebServiceReturnCustomerData()
         {
             //Arrange
-            var adaptor = MockRepository.GenerateStub<ICustomerDataServiceAdaptor>();
+            var adaptor = MockRepository.GenerateMock<ICustomerDataServiceAdaptor>();
             //Act
-
+            object returnedBill = adaptor.Stub(a => a.ProvideCustomerBill()).Return(FakeBillData.GetFakeBill());
             //Assert
-            
-            Assert.IsTrue(false);
+            Assert.IsNotNull(returnedBill);
         }
 
         [TestMethod]

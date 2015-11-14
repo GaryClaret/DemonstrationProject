@@ -1,4 +1,5 @@
 ﻿using DemonstrationProject.Adaptors;
+using DemoUnitTests.FakeClasses;
 using SimpleInjector;
 using SimpleInjector.Integration.Web.Mvc;
 using System;
@@ -16,7 +17,7 @@ namespace DemoUnitTests
         public void MapInterfacesToImplementations()
         {
             container = new Container();
-            container.Register<ICustomerDataServiceAdaptor, CustomerDataServiceAdaptor>();
+            container.Register<ICustomerDataServiceAdaptor, FakeCustomerDataServiceAdaptor>();
             container.Verify();
 
             DependencyResolver.SetResolver(new SimpleInjectorDependencyResolver(container));

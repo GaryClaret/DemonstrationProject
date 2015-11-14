@@ -91,6 +91,8 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="FakeBillData.cs" />
+    <Compile Include="FakeClasses\FakeCustomerDataServiceAdaptor.cs" />
     <Compile Include="SimpleInjectorImpl.cs" />
     <Compile Include="ViewCustomerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -105,9 +107,7 @@
       <Name>DemonstrationProject</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="FakeClasses\" />
-  </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

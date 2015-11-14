@@ -141,6 +141,16 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RawDataMappers\CustomerBillMapper.cs" />
     <Compile Include="RawDataMappers\ICustomerBillMapper.cs" />
+    <Compile Include="RawDataObjects\RawCustomerBill.cs" />
+    <Compile Include="RawDataObjects\RawCustomerBillJsonTypes\RawBuyAndKeep.cs" />
+    <Compile Include="RawDataObjects\RawCustomerBillJsonTypes\RawCall.cs" />
+    <Compile Include="RawDataObjects\RawCustomerBillJsonTypes\RawCallCharges.cs" />
+    <Compile Include="RawDataObjects\RawCustomerBillJsonTypes\RawPackage.cs" />
+    <Compile Include="RawDataObjects\RawCustomerBillJsonTypes\RawPeriod.cs" />
+    <Compile Include="RawDataObjects\RawCustomerBillJsonTypes\RawRental.cs" />
+    <Compile Include="RawDataObjects\RawCustomerBillJsonTypes\RawSkyStore.cs" />
+    <Compile Include="RawDataObjects\RawCustomerBillJsonTypes\RawStatement.cs" />
+    <Compile Include="RawDataObjects\RawCustomerBillJsonTypes\RawSubscription.cs" />
     <Compile Include="Service References\CustomerDataService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

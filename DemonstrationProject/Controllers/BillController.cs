@@ -9,11 +9,7 @@ namespace DemonstrationProject.Controllers
 {
     public class BillController : Controller
     {
-        private ICustomerBl _customerBusiness;
-        private 
-
-        public BillController()
- 
+        
         [HttpGet]
         public ActionResult Index()
         {
