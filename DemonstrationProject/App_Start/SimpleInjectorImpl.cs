@@ -6,6 +6,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using DemonstrationProject.CustumerDataService;
+using DemonstrationProject.RawDataMappers;
 
 namespace DemonstrationProject.App_Start
 {
@@ -16,9 +18,11 @@ namespace DemonstrationProject.App_Start
         public void MapInterfacesToImplementations()
         {
             container = new Container();
+            container.Register<ICustomerBillMapper, CustomerBillMapper>();
             container.Register<ICustomerDataServiceAdaptor, CustomerDataServiceAdaptor>();
+            container.Register<ICallCustomerDataService,CallDataService>(Lifestyle.Singleton);
+            
             container.Verify();
-
             DependencyResolver.SetResolver(new SimpleInjectorDependencyResolver(container));   
         }
     }

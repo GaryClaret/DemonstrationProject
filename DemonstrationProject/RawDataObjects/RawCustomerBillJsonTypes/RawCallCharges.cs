@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using DemonstrationProject.DomainObjects.DmCustomerBillJsonTypes;
-
-namespace DemonstrationProject.RawDataObjects.RawCustomerBillJsonTypes
+﻿namespace DemonstrationProject.RawDataObjects.RawCustomerBillJsonTypes
 {
     public class RawCallCharges
     {
@@ -12,5 +6,4 @@ namespace DemonstrationProject.RawDataObjects.RawCustomerBillJsonTypes
 
         public double Total { get; set; }
     }
-
 }

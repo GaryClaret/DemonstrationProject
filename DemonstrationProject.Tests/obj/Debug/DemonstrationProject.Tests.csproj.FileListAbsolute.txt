@@ -22,3 +22,7 @@
 \\psf\home\Documents\Visual Studio 2012\Projects\DemonstrationProject\DemonstrationProject.Tests\obj\Debug\DemonstrationProject.Tests.csprojResolveAssemblyReference.cache
 \\psf\home\Documents\Visual Studio 2012\Projects\DemonstrationProject\DemonstrationProject.Tests\obj\Debug\DemonstrationProject.Tests.dll
 \\psf\home\Documents\Visual Studio 2012\Projects\DemonstrationProject\DemonstrationProject.Tests\obj\Debug\DemonstrationProject.Tests.pdb
+\\psf\home\documents\visual studio 2012\Projects\DemonstrationProject\DemonstrationProject.Tests\bin\Debug\SimpleInjector.dll
+\\psf\home\documents\visual studio 2012\Projects\DemonstrationProject\DemonstrationProject.Tests\bin\Debug\SimpleInjector.Integration.Web.Mvc.dll
+\\psf\home\documents\visual studio 2012\Projects\DemonstrationProject\DemonstrationProject.Tests\bin\Debug\SimpleInjector.xml
+\\psf\home\documents\visual studio 2012\Projects\DemonstrationProject\DemonstrationProject.Tests\bin\Debug\SimpleInjector.Integration.Web.Mvc.xml

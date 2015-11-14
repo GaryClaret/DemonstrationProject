@@ -125,6 +125,8 @@
     <Compile Include="BusinessLogic\CustomerBl.cs" />
     <Compile Include="BusinessLogic\ICustomerBl.cs" />
     <Compile Include="Controllers\BillController.cs" />
+    <Compile Include="CustumerDataService\CallDataService.cs" />
+    <Compile Include="CustumerDataService\ICallCustomerDataService.cs" />
     <Compile Include="DomainObjects\DmCustomerBill.cs" />
     <Compile Include="DomainObjects\DmCustomerBillJsonTypes\BuyAndKeep.cs" />
     <Compile Include="DomainObjects\DmCustomerBillJsonTypes\Call.cs" />
@@ -138,6 +140,16 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CustomerBillModel.cs" />
+    <Compile Include="Models\CustomerBillSubModels\BuyAndKeepModel.cs" />
+    <Compile Include="Models\CustomerBillSubModels\CallModel.cs" />
+    <Compile Include="Models\CustomerBillSubModels\CallChargesModel.cs" />
+    <Compile Include="Models\CustomerBillSubModels\PackageModel.cs" />
+    <Compile Include="Models\CustomerBillSubModels\PeriodModel.cs" />
+    <Compile Include="Models\CustomerBillSubModels\RentalModel.cs" />
+    <Compile Include="Models\CustomerBillSubModels\SkyStoreModel.cs" />
+    <Compile Include="Models\CustomerBillSubModels\StatementModel.cs" />
+    <Compile Include="Models\CustomerBillSubModels\SubscriptionModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RawDataMappers\CustomerBillMapper.cs" />
     <Compile Include="RawDataMappers\ICustomerBillMapper.cs" />
@@ -156,6 +168,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="UIMapper\CustomerModelMapper.cs" />
     <Compile Include="UIMapper\ICustomerModelMapper.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -194,7 +207,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

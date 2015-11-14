@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DemonstrationProject.DomainObjects;
+using DemonstrationProject.Models;
 
 namespace DemonstrationProject.BusinessLogic
 {

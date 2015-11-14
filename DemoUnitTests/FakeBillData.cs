@@ -111,7 +111,8 @@ namespace DemoUnitTests
             RawSkyStore skyStore = new RawSkyStore
             {
                 Rentals = new RawRental[2] { rental1, rental2 },
-                BuyAndKeep = new RawBuyAndKeep[1]{buyAndKeep1}
+                BuyAndKeep = new RawBuyAndKeep[1]{buyAndKeep1},
+                Total = 16.50
             };
 
             return skyStore;
