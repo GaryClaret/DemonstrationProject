@@ -1,7 +1,5 @@
 ﻿using DemonstrationProject.DomainObjects;
 using DemonstrationProject.DomainObjects.DmCustomerBillJsonTypes;
-using DemonstrationProject.RawDataObjects;
-using DemonstrationProject.RawDataObjects.RawCustomerBillJsonTypes;
 using System.Linq;
 
 namespace DemonstrationProject.RawDataMappers
@@ -10,7 +8,7 @@ namespace DemonstrationProject.RawDataMappers
     {
         public DmCustomerBill MapRawBillToDomainObject(object rawCustomerBill)
         {
-           RawCustomerBill bill = (RawCustomerBill)rawCustomerBill;
+           var bill = (CustomerDataService.RawCustomerBill)rawCustomerBill;
 
            DmCustomerBill domainBill = new DmCustomerBill
            {
@@ -26,7 +24,7 @@ namespace DemonstrationProject.RawDataMappers
 
         private Statement MapStatementToDomainStatement(object rawStatement)
         {
-            RawStatement statement = (RawStatement) rawStatement;
+            var statement = (CustomerDataService.Statement)rawStatement;
 
             Statement domainStatement = new Statement
             {
@@ -40,7 +38,7 @@ namespace DemonstrationProject.RawDataMappers
 
         private Period MapPeriodToDomainPeriod(object rawPeriod)
         {
-            RawPeriod period = (RawPeriod) rawPeriod;
+            var period = (CustomerDataService.Period)rawPeriod;
 
             Period domainPeriod = new Period
             {
@@ -53,7 +51,7 @@ namespace DemonstrationProject.RawDataMappers
 
         private SkyStore MapSkyStoreToDomainObject(object rawSkyStore)
         {
-            RawSkyStore skyStore = (RawSkyStore) rawSkyStore;
+            var skyStore = (CustomerDataService.SkyStore)rawSkyStore;
 
             SkyStore domainSkyStore = new SkyStore
             {
@@ -67,9 +65,9 @@ namespace DemonstrationProject.RawDataMappers
 
         private Rental MapRentalDomainObject(object rawRental)
         {
-            RawRental rental = (RawRental) rawRental;
+            var rental = (CustomerDataService.Rental)rawRental;
 
-            Rental domainrental = new Rental
+            var domainrental = new Rental
             {
                 Cost = rental.Cost,
                 Title = rental.Title
@@ -80,7 +78,7 @@ namespace DemonstrationProject.RawDataMappers
 
         private Package MapPackageToDomainObject(object rawPackage)
         {
-            RawPackage package = (RawPackage) rawPackage;
+            var package = (CustomerDataService.Package)rawPackage;
 
             Package domainPackage = new Package
             {
@@ -93,7 +91,7 @@ namespace DemonstrationProject.RawDataMappers
 
         private Subscription MapSubscriptionsToDomainObject(object rawSubscription)
         {
-            RawSubscription subscription = (RawSubscription) rawSubscription;
+            var subscription = (CustomerDataService.Subscription)rawSubscription;
 
             Subscription domainSubscription = new Subscription
             {
@@ -107,7 +105,7 @@ namespace DemonstrationProject.RawDataMappers
 
         private CallCharges MapCallChargesToDomainObject(object rawCallCharges)
         {
-            RawCallCharges callCharges = (RawCallCharges)rawCallCharges;
+            var callCharges = (CustomerDataService.CallCharges)rawCallCharges;
 
             CallCharges domainCallCharges = new CallCharges
             {
@@ -120,7 +118,7 @@ namespace DemonstrationProject.RawDataMappers
 
         private Call MapCallToDomainObject(object rawCall)
         {
-            RawCall call = (RawCall)rawCall;
+            var call = (CustomerDataService.Call)rawCall;
 
             Call domainCall = new Call
             {
@@ -134,7 +132,7 @@ namespace DemonstrationProject.RawDataMappers
 
         private BuyAndKeep MapBuyAndKeepToDomainObject(object rawBuyAndKeep)
         {
-            RawBuyAndKeep buyAndKeep = (RawBuyAndKeep)rawBuyAndKeep;
+            var buyAndKeep = (CustomerDataService.BuyAndKeep)rawBuyAndKeep;
 
             BuyAndKeep domainBuyAndKeep = new BuyAndKeep
             {

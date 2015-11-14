@@ -1,0 +1,60 @@
+﻿
+@using DemonstrationProject.Models.CustomerBillSubModels
+@model DemonstrationProject.Models.CustomerBillModel
+
+@{
+    ViewBag.Title = "CustomerBill";
+}
+
+<h2>Customer Bill Details</h2>
+
+Due:
+@Model.Statement.Due
+
+Generated:
+@Model.Statement.Generated
+
+Period From:
+@Model.Statement.Period.From
+
+Period To:
+@Model.Statement.Period.To
+
+<h3>Calls</h3>
+@foreach (CallModel call in Model.CallCharges.Calls)
+{
+    <p>@call.Called</p>
+    <p>@call.Duration</p>
+    <p>@call.Cost</p>
+}
+<p>@Model.CallCharges.Total</p>
+
+
+<h3>Packages</h3>
+@foreach (SubscriptionModel subscription in Model.Package.Subscriptions)
+{
+    <p>@subscription.Name</p>
+    <p>@subscription.Type</p>
+    <p>@subscription.Cost</p>
+}
+<p>@Model.Package.Total</p>
+
+<h3>Sky Store</h3>
+<h3>Sky Store buy and keep</h3>
+@foreach (BuyAndKeepModel buyAndKeep in Model.SkyStore.BuyAndKeep)
+{
+    <p>@buyAndKeep.Title</p>
+    <p>@buyAndKeep.Cost</p>
+}
+
+<h3>Sky Store rentals</h3>
+@foreach (RentalModel rental in Model.SkyStore.Rentals)
+{
+    <p>@rental.Title</p>
+    <p>@rental.Cost</p>
+}
+
+<p>@Model.SkyStore.Total</p>
+
+<h3>Total</h3>
+<p>@Model.Total</p>

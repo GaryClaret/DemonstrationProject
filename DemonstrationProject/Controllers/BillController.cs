@@ -4,7 +4,7 @@ using DemonstrationProject.UIMapper;
 
 namespace DemonstrationProject.Controllers
 {
-    public class BillController : Controller
+    public class BillController : BaseController
     {
         private readonly ICustomerBl _customerBillBusiness;
         private readonly ICustomerModelMapper _customerBillModelMapper;
@@ -21,7 +21,7 @@ namespace DemonstrationProject.Controllers
             var domainCustomerBill = _customerBillBusiness.ProvideCustomerBill();
             var customerBillModel = _customerBillModelMapper.Map(domainCustomerBill);
 
-            return View("",customerBillModel);
+            return View("CustomerBill",customerBillModel);
         }
     }
 }

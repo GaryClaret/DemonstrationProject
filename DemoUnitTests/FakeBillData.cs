@@ -1,10 +1,5 @@
-﻿using DemonstrationProject.RawDataObjects;
+﻿using DemonstrationProject.CustomerDataService;
 using DemonstrationProject.RawDataObjects.RawCustomerBillJsonTypes;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DemoUnitTests
 {
@@ -12,7 +7,7 @@ namespace DemoUnitTests
     {
         public static object GetFakeBill()
         {
-            RawCustomerBill bill = new RawCustomerBill();
+            var bill = new DemonstrationProject.CustomerDataService.RawCustomerBill();
             bill.Total = 70.20;
             bill.CallCharges = GetCustomerCalls();
             bill.Package = GetCustomerSubscriptions();
@@ -22,63 +17,64 @@ namespace DemoUnitTests
             return bill;
         }
 
-        private static RawPackage GetCustomerSubscriptions()
+        private static DemonstrationProject.CustomerDataService.Package GetCustomerSubscriptions()
         {
-            RawSubscription sub1 = new RawSubscription
+            var sub1 = new DemonstrationProject.CustomerDataService.Subscription
             {
                 Type = "TV",
                 Name = "Movies",
                 Cost = 10.35
             };
 
-            RawSubscription sub2 = new RawSubscription
+            var sub2 = new DemonstrationProject.CustomerDataService.Subscription
             {
                 Type = "Boardband",
                 Name = "Fibre",
                 Cost = 10.15
             };
 
-            RawPackage package = new RawPackage
+            var package = new DemonstrationProject.CustomerDataService.Package
             {
                 Total = 20.50,
-                Subscriptions = new RawSubscription[2] { sub1, sub2 }
+                Subscriptions = new DemonstrationProject.CustomerDataService.Subscription[2] { sub1, sub2 }
             };
             return package;
         }
 
-        private static RawCallCharges GetCustomerCalls()
+        private static DemonstrationProject.CustomerDataService.CallCharges GetCustomerCalls()
         {
-            RawCall call1 = new RawCall
+            var call1 = new DemonstrationProject.CustomerDataService.Call
             {
                 Called = "07716393769",
                 Duration = "00:23:03",
                 Cost = 10.00
             };
 
-            RawCall call2 = new RawCall
+            var call2 = new DemonstrationProject.CustomerDataService.Call
             {
                 Called = "07881671861",
                 Duration = "00:13:03",
                 Cost = 10.10
             };
 
-            RawCallCharges callCharges = new RawCallCharges
+            var callCharges = new DemonstrationProject.CustomerDataService.CallCharges
             {
                 Total = 20.10,
-                Calls = new RawCall[2] { call1, call2 }
+                Calls = new DemonstrationProject.CustomerDataService.Call[2] { call1, call2 }
             };
+
             return callCharges;
         }
 
-        private static RawStatement GetCustomerStatement()
+        private static DemonstrationProject.CustomerDataService.Statement GetCustomerStatement()
         {
-            RawPeriod period = new RawPeriod
+            var period = new DemonstrationProject.CustomerDataService.Period
             {
                 From = "2015-01-26",
                 To = "2015-02-26"
             };
 
-            RawStatement statement = new RawStatement
+            var statement = new DemonstrationProject.CustomerDataService.Statement
             {
                 Generated = "2015-01-11",
                 Due = "2015-01-25",
@@ -88,30 +84,30 @@ namespace DemoUnitTests
             return statement;
         }
 
-        private static RawSkyStore GetCustomerSkyStore()
+        private static DemonstrationProject.CustomerDataService.SkyStore GetCustomerSkyStore()
         {
-            RawRental rental1 = new RawRental
+            var rental1 = new DemonstrationProject.CustomerDataService.Rental
             {
                 Title = "Dodgeball",
                 Cost = 2.00
             };
 
-            RawRental rental2 = new RawRental
+            var rental2 = new DemonstrationProject.CustomerDataService.Rental
             {
                 Title = "Anchorman",
                 Cost = 1.50
             };
 
-            RawBuyAndKeep buyAndKeep1 = new RawBuyAndKeep
+            var buyAndKeep1 = new DemonstrationProject.CustomerDataService.BuyAndKeep
             {
                 Title = "Interstellar",
                 Cost = 13.00
             };
 
-            RawSkyStore skyStore = new RawSkyStore
+            var skyStore = new DemonstrationProject.CustomerDataService.SkyStore
             {
-                Rentals = new RawRental[2] { rental1, rental2 },
-                BuyAndKeep = new RawBuyAndKeep[1]{buyAndKeep1},
+                Rentals = new DemonstrationProject.CustomerDataService.Rental[2] { rental1, rental2 },
+                BuyAndKeep = new DemonstrationProject.CustomerDataService.BuyAndKeep[1] { buyAndKeep1 },
                 Total = 16.50
             };
 

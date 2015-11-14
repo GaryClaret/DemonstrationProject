@@ -6,8 +6,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using DemonstrationProject.BusinessLogic;
 using DemonstrationProject.CustumerDataService;
 using DemonstrationProject.RawDataMappers;
+using DemonstrationProject.UIMapper;
 
 namespace DemonstrationProject.App_Start
 {
@@ -18,8 +20,12 @@ namespace DemonstrationProject.App_Start
         public void MapInterfacesToImplementations()
         {
             container = new Container();
+
+            container.Register<ICustomerBl,CustomerBl>();
             container.Register<ICustomerBillMapper, CustomerBillMapper>();
+            container.Register<ICustomerModelMapper,CustomerModelMapper>();
             container.Register<ICustomerDataServiceAdaptor, CustomerDataServiceAdaptor>();
+            
             container.Register<ICallCustomerDataService,CallDataService>(Lifestyle.Singleton);
             
             container.Verify();

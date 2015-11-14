@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Routing;
+using DemonstrationProject.App_Start;
 
 namespace DemonstrationProject
 {
@@ -19,6 +20,9 @@ namespace DemonstrationProject
             WebApiConfig.Register(GlobalConfiguration.Configuration);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+
+            SimpleInjectorImpl dependencyInjectionImpl = new SimpleInjectorImpl();
+            dependencyInjectionImpl.MapInterfacesToImplementations();
         }
     }
 }
