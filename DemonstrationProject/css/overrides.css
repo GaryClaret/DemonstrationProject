@@ -1,0 +1,37 @@
+
+.subset-header {
+    clear: both;
+    max-height: 300px;
+    overflow-y: scroll;
+    display: none;
+}
+
+.dsk-company-image {
+    width: 75%;
+    padding-top: 10px;
+}
+
+.mob-show {
+    display: block !important;
+}
+
+.text-blue {
+    color: lightskyblue;
+    
+}
+
+.show-more {
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .mob-hidden {
+        display: none !important;
+    }
+}
+
+@media (max-width: 990px) {
+    .tab-company-image{
+        padding-top: 10px;
+    }
+}
