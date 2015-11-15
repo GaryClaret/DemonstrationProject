@@ -39,7 +39,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
     <Reference Include="SimpleInjector">
       <HintPath>..\packages\SimpleInjector.3.1.0\lib\net45\SimpleInjector.dll</HintPath>
     </Reference>
@@ -49,26 +51,64 @@
     <Reference Include="SimpleInjector.Integration.Web.Mvc">
       <HintPath>..\packages\SimpleInjector.Integration.Web.Mvc.3.1.0\lib\net40\SimpleInjector.Integration.Web.Mvc.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.ServiceModel" />
-    <Reference Include="System.Web.DynamicData" />
-    <Reference Include="System.Web.Entity" />
-    <Reference Include="System.Web.ApplicationServices" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Web" />
-    <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Web.Abstractions" />
-    <Reference Include="System.Web.Routing" />
-    <Reference Include="System.Xml" />
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Entity">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Abstractions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Routing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Configuration" />
-    <Reference Include="System.Web.Services" />
-    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
@@ -81,11 +121,14 @@
       <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http">
+      <Private>True</Private>
     </Reference>
     <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System.Net.Http.WebRequest">
+      <Private>True</Private>
     </Reference>
     <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
@@ -93,9 +136,11 @@
     </Reference>
     <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
@@ -159,7 +204,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BillResources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Service References\CustomerDataService\Reference.cs">
+    <Compile Include="Service References\CustomerDataWebService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -181,13 +226,13 @@
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\npm.js" />
-    <Content Include="Service References\CustomerDataService\CustomerDataWebService.disco" />
-    <Content Include="Service References\CustomerDataService\configuration91.svcinfo" />
-    <Content Include="Service References\CustomerDataService\configuration.svcinfo" />
-    <Content Include="Service References\CustomerDataService\DemonstrationProject.CustomerDataService.RawCustomerBill.datasource">
+    <Content Include="Service References\CustomerDataWebService\CustomerDataWebService.disco" />
+    <Content Include="Service References\CustomerDataWebService\configuration91.svcinfo" />
+    <Content Include="Service References\CustomerDataWebService\configuration.svcinfo" />
+    <Content Include="Service References\CustomerDataWebService\DemonstrationProject.CustomerDataWebService.RawCustomerBill.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Service References\CustomerDataService\Reference.svcmap">
+    <Content Include="Service References\CustomerDataWebService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </Content>
@@ -199,7 +244,6 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Views\Web.config" />
-    <Content Include="Service References\CustomerDataService\CustomerDataWebService.wsdl" />
     <Content Include="css\bootstrap-theme.css.map" />
     <Content Include="css\bootstrap.css.map" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
@@ -208,16 +252,21 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="BillMain.cshtml" />
     <Content Include="Layout\_MainLayout.cshtml" />
-    <None Include="Service References\CustomerDataService\CustomerDataWebService1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\CustomerDataService\CustomerDataWebService2.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\CustomerDataService\CustomerDataWebService3.xsd">
-      <SubType>Designer</SubType>
-    </None>
+    <None Include="Properties\PublishProfiles\DeployWeb.pubxml" />
     <Content Include="Views\Bill\CustomerBill.cshtml" />
+    <Content Include="Service References\CustomerDataWebService\CustomerDataWebService.wsdl" />
+    <None Include="Service References\CustomerDataWebService\CustomerDataWebService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerDataWebService\CustomerDataWebService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerDataWebService\CustomerDataWebService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerDataWebService\CustomerDataWebService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -229,18 +278,13 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Service References\CustomerDataService\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\CustomerDataService\CustomerDataWebService.xsd">
-      <SubType>Designer</SubType>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Resources\BillResources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>BillResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\CustomerDataWebService\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

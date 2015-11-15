@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8895bc82-ef9e-450c-ad84-2923c2914f93" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://ec2-52-33-19-179.us-west-2.compute.amazonaws.com/CustomerDataWebService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CustomerDataWebService.xsd" MetadataType="Schema" ID="05f38e59-def0-4962-a8ab-3039db6782c7" SourceId="1" SourceUrl="http://ec2-52-33-19-179.us-west-2.compute.amazonaws.com/CustomerDataWebService.svc?xsd=xsd2" />
+    <MetadataFile FileName="CustomerDataWebService1.xsd" MetadataType="Schema" ID="d68b3be1-aca4-4af6-ae47-d765685e3e55" SourceId="1" SourceUrl="http://ec2-52-33-19-179.us-west-2.compute.amazonaws.com/CustomerDataWebService.svc?xsd=xsd3" />
+    <MetadataFile FileName="CustomerDataWebService.wsdl" MetadataType="Wsdl" ID="ebb2bdee-2291-411d-b24c-eacb44be8f2d" SourceId="1" SourceUrl="http://ec2-52-33-19-179.us-west-2.compute.amazonaws.com/CustomerDataWebService.svc?wsdl" />
+    <MetadataFile FileName="CustomerDataWebService2.xsd" MetadataType="Schema" ID="bcd390fd-791b-4a02-ba04-9e95ac5f4389" SourceId="1" SourceUrl="http://ec2-52-33-19-179.us-west-2.compute.amazonaws.com/CustomerDataWebService.svc?xsd=xsd1" />
+    <MetadataFile FileName="CustomerDataWebService.disco" MetadataType="Disco" ID="e265a478-175a-448c-a004-d33805c06257" SourceId="1" SourceUrl="http://ec2-52-33-19-179.us-west-2.compute.amazonaws.com/CustomerDataWebService.svc?disco" />
+    <MetadataFile FileName="CustomerDataWebService3.xsd" MetadataType="Schema" ID="e2074e9e-61d0-4521-b452-f9277a9444be" SourceId="1" SourceUrl="http://ec2-52-33-19-179.us-west-2.compute.amazonaws.com/CustomerDataWebService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

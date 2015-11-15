@@ -1,4 +1,4 @@
-﻿using DemonstrationProject.CustomerDataService;
+﻿using DemonstrationProject.CustomerDataWebService;
 
 namespace DemonstrationProject.CustumerDataService
 {
