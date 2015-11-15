@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Linq;
 using DemonstrationProject.DomainObjects;
 using DemonstrationProject.DomainObjects.DmCustomerBillJsonTypes;
 using DemonstrationProject.Models;
 using DemonstrationProject.Models.CustomerBillSubModels;
-using DemonstrationProject.RawDataObjects.RawCustomerBillJsonTypes;
 
 namespace DemonstrationProject.UIMapper
 {

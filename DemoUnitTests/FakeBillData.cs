@@ -1,18 +1,17 @@
-﻿using DemonstrationProject.CustomerDataService;
-using DemonstrationProject.RawDataObjects.RawCustomerBillJsonTypes;
-
-namespace DemoUnitTests
+﻿namespace DemoUnitTests
 {
     public static class FakeBillData
     {
         public static object GetFakeBill()
         {
-            var bill = new DemonstrationProject.CustomerDataService.RawCustomerBill();
-            bill.Total = 70.20;
-            bill.CallCharges = GetCustomerCalls();
-            bill.Package = GetCustomerSubscriptions();
-            bill.Statement = GetCustomerStatement();
-            bill.SkyStore = GetCustomerSkyStore();
+            var bill = new DemonstrationProject.CustomerDataService.RawCustomerBill
+            {
+                Total = 70.20,
+                CallCharges = GetCustomerCalls(),
+                Package = GetCustomerSubscriptions(),
+                Statement = GetCustomerStatement(),
+                SkyStore = GetCustomerSkyStore()
+            };
 
             return bill;
         }

@@ -25,3 +25,5 @@
 \\psf\home\documents\visual studio 2012\Projects\DemonstrationProject\DemonstrationProject\bin\SimpleInjector.Integration.Web.Mvc.dll
 \\psf\home\documents\visual studio 2012\Projects\DemonstrationProject\DemonstrationProject\bin\SimpleInjector.Integration.Web.xml
 \\psf\home\documents\visual studio 2012\Projects\DemonstrationProject\DemonstrationProject\bin\SimpleInjector.Integration.Web.Mvc.xml
+\\psf\home\documents\visual studio 2012\Projects\DemonstrationProject\DemonstrationProject\obj\Debug\DemonstrationProject.Resources.BillResources.resources
+\\psf\home\documents\visual studio 2012\Projects\DemonstrationProject\DemonstrationProject\obj\Debug\DemonstrationProject.csproj.GenerateResource.Cache
