@@ -11,6 +11,10 @@ work with in my current role.  This structure being:
 
 Controller (BillController) -> Business Logic -> (CustomerBl) -> Adaptor (CustomerDataServiceAdaptor)
 
+SimpleInjector has been used for the dependency injection.
+
+I coded the project following TDD principles e.g. I wrote the tests alongside writing the code to get the JSON and return it back to the model.
+
 A CustomerBillMapper converts the file from its raw CustomerDataService form to the domain model required for the business logic and eventually model - required for the view.
 
 The adaptor connects to the web service project and retrieves the JSON file as requested.
