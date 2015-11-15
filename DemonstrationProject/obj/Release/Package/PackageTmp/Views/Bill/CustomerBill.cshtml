@@ -13,11 +13,14 @@
 
 <div class="container">
     <div class="page-header">
-        <h1>@BillResources.BillHeader</h1>
+        <div class="row">
+            <div class="col-xs-7 col-md-8"><h1>@BillResources.BillHeader</h1></div>
+            <div class="col-xs-5 col-md-4"><img class="dsk-company-image tab-company-image" alt="Company Logo" src="/Images/company_logo.jpg"/></div>
+        </div>
+        
     </div>
-
     <div class="row">
-        <table class="table table-condensed">
+        <table class="table table-condensed table-responsive">
             <thead>
                 <tr>
                     <th>
@@ -54,10 +57,10 @@
     </div>
 
     <h3>@BillResources.CallsTitle</h3>
-    <span onclick="ShowHide('calls-container')">@BillResources.ShowOrHideTable</span>
-    <div id="calls-container" style="clear: both; max-height: 300px; overflow-y: scroll;">
-        <table class="table table-condensed">
-                <thead>
+    <span onclick="ShowHide('calls-container')" class="text-blue show-more">@BillResources.ShowOrHideTable</span>
+    <div id="calls-container" class="subset-header">
+        <table class="table table-condensed table-responsive">
+            <thead>
                 <tr>
                     <th>
                         @BillResources.CallNumber
@@ -69,8 +72,8 @@
                         @BillResources.CallsCost
                     </th>
                 </tr>
-                </thead>
-                <tbody>
+            </thead>
+            <tbody>
                 @foreach (CallModel call in Model.CallCharges.Calls)
                 {
                     <tr>
@@ -81,129 +84,134 @@
                             @call.Duration
                         </td>
                         <td>
-                            @String.Format("{0:C}",call.Cost)
+                            @String.Format("{0:C}", call.Cost)
                         </td>
                     </tr>
                 }
                 <tr>
+                    <td></td>
+                    <td></td>
                     <td>
-                        @String.Format("{0:C}",@Model.CallCharges.Total)
+                        @String.Format("{0:C}", @Model.CallCharges.Total)
                     </td>
                 </tr>
-                </tbody>
-            </table>
+            </tbody>
+        </table>
     </div>
 
-    
+
 
     <h3>Packages</h3>
-    <span onclick="ShowHide('package-container')">@BillResources.ShowOrHideTable</span>
-    <div id="package-container" style="clear: both; max-height: 300px; overflow-y: scroll;">
-    <table class="table table-condensed">
-        <thead>
-        <tr>
-            <th>
-                @BillResources.SubscriptionName
-            </th>
-            <th>
-                @BillResources.SubscriptionType
-            </th>
-            <th>
-                @BillResources.SubscriptionCost
-            </th>
-        </tr>
-        </thead>
-        <tbody>
-        @foreach (SubscriptionModel subscription in Model.Package.Subscriptions)
-        {
-            <tr>
-                <td>
-                    @subscription.Name
-                </td>
-                <td>
-                    @subscription.Type
-                </td>
-                <td>
-                    @String.Format("{0:C}",subscription.Cost)
-                </td>
-            </tr>
-        }
-        <tr>
-            <td>
-                @String.Format("{0:C}",Model.Package.Total)
-            </td>
-        </tr>
-        </tbody>
-    </table>
+    <span onclick="ShowHide('package-container')" class="text-blue show-more">@BillResources.ShowOrHideTable</span>
+    <div id="package-container" class="subset-header">
+        <table class="table table-condensed table-responsive">
+            <thead>
+                <tr>
+                    <th>
+                        @BillResources.SubscriptionName
+                    </th>
+                    <th>
+                        @BillResources.SubscriptionType
+                    </th>
+                    <th>
+                        @BillResources.SubscriptionCost
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (SubscriptionModel subscription in Model.Package.Subscriptions)
+                {
+                    <tr>
+                        <td>
+                            @subscription.Name
+                        </td>
+                        <td>
+                            @subscription.Type
+                        </td>
+                        <td>
+                            @String.Format("{0:C}", subscription.Cost)
+                        </td>
+                    </tr>
+                }
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        @String.Format("{0:C}", Model.Package.Total)
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
     <h3>@BillResources.SkyStoreTitle</h3>
-    <span onclick="ShowHide('skystore-container')">@BillResources.ShowOrHideTable</span>
-    <div id="skystore-container" style="clear: both; max-height: 300px; overflow-y: scroll;">
+    <span onclick="ShowHide('skystore-container')" class="text-blue show-more">@BillResources.ShowOrHideTable</span>
+    <div id="skystore-container" class="subset-header">
         <h4>@BillResources.SkyStoreBuyAndKeep</h4>
-        <table class="table table-condensed">
+        <table class="table table-condensed table-responsive">
             <thead>
-            <tr>
-                <th>
-                    @BillResources.StoreTitle
-                </th>
-                <th>
-                    @BillResources.StoreCost
-                </th>
-            </tr>
+                <tr>
+                    <th>
+                        @BillResources.StoreTitle
+                    </th>
+                   
+                    <th>
+                        @BillResources.StoreCost
+                    </th>
+                </tr>
 
             </thead>
             <tbody>
-
-            @foreach (BuyAndKeepModel buyAndKeep in Model.SkyStore.BuyAndKeep)
-            {
-                <tr>
-                    <td>
-                        @buyAndKeep.Title
-                    </td>
-                    <td>
-                        @String.Format("{0:C}",buyAndKeep.Cost)
-                    </td>
-                </tr>
-            }
+                @foreach (BuyAndKeepModel buyAndKeep in Model.SkyStore.BuyAndKeep)
+                {
+                    <tr>
+                        <td>
+                            @buyAndKeep.Title
+                        </td>
+                        <td>
+                            @String.Format("{0:C}", buyAndKeep.Cost)
+                        </td>
+                    </tr>
+                }
             </tbody>
         </table>
 
         <h4>@BillResources.SkyStoreRentals</h4>
-        <table class="table table-condensed">
+        <table class="table table-condensed table-responsive">
             <thead>
-            <tr>
-                <th>
-                    @BillResources.StoreTitle
-                </th>
-                <th>
-                    @BillResources.StoreCost
-                </th>
-            </tr>
+                <tr>
+                    <th>
+                        @BillResources.StoreTitle
+                    </th>
+                    <th>
+                        @BillResources.StoreCost
+                    </th>
+                </tr>
 
             </thead>
             <tbody>
-            @foreach (RentalModel rental in Model.SkyStore.Rentals)
-            {
+                @foreach (RentalModel rental in Model.SkyStore.Rentals)
+                {
+                    <tr>
+                        <td>
+                            @rental.Title
+                        </td>
+                        <td>
+                            @String.Format("{0:C}", rental.Cost)
+                        </td>
+                    </tr>
+                }
                 <tr>
+                    <td></td>
                     <td>
-                        @rental.Title
-                    </td>
-                    <td>
-                        @String.Format("{0:C}",rental.Cost)
+                        @String.Format("{0:C}", Model.SkyStore.Total)
                     </td>
                 </tr>
-            }
-            <tr>
-                <td>
-                    @String.Format("{0:C}",Model.SkyStore.Total)
-                </td>
-            </tr>
             </tbody>
         </table>
     </div>
     <h3>@BillResources.Total</h3>
-    <p>@String.Format("{0:C}",Model.Total)</p>
+    <p>@String.Format("{0:C}", Model.Total)</p>
 </div>
 
 
