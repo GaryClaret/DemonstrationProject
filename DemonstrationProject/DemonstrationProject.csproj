@@ -169,7 +169,6 @@
     <Compile Include="App_Start\SimpleInjectorImpl.cs" />
     <Compile Include="BusinessLogic\CustomerBl.cs" />
     <Compile Include="BusinessLogic\ICustomerBl.cs" />
-    <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\BillController.cs" />
     <Compile Include="CustumerDataService\CallDataService.cs" />
     <Compile Include="CustumerDataService\ICallCustomerDataService.cs" />

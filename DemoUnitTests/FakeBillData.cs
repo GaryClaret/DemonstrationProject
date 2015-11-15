@@ -4,7 +4,7 @@
     {
         public static object GetFakeBill()
         {
-            var bill = new DemonstrationProject.CustomerDataService.RawCustomerBill
+            var bill = new DemonstrationProject.CustomerDataWebService.RawCustomerBill
             {
                 Total = 70.20,
                 CallCharges = GetCustomerCalls(),
@@ -16,64 +16,64 @@
             return bill;
         }
 
-        private static DemonstrationProject.CustomerDataService.Package GetCustomerSubscriptions()
+        private static DemonstrationProject.CustomerDataWebService.Package GetCustomerSubscriptions()
         {
-            var sub1 = new DemonstrationProject.CustomerDataService.Subscription
+            var sub1 = new DemonstrationProject.CustomerDataWebService.Subscription
             {
                 Type = "TV",
                 Name = "Movies",
                 Cost = 10.35
             };
 
-            var sub2 = new DemonstrationProject.CustomerDataService.Subscription
+            var sub2 = new DemonstrationProject.CustomerDataWebService.Subscription
             {
                 Type = "Boardband",
                 Name = "Fibre",
                 Cost = 10.15
             };
 
-            var package = new DemonstrationProject.CustomerDataService.Package
+            var package = new DemonstrationProject.CustomerDataWebService.Package
             {
                 Total = 20.50,
-                Subscriptions = new DemonstrationProject.CustomerDataService.Subscription[2] { sub1, sub2 }
+                Subscriptions = new DemonstrationProject.CustomerDataWebService.Subscription[2] { sub1, sub2 }
             };
             return package;
         }
 
-        private static DemonstrationProject.CustomerDataService.CallCharges GetCustomerCalls()
+        private static DemonstrationProject.CustomerDataWebService.CallCharges GetCustomerCalls()
         {
-            var call1 = new DemonstrationProject.CustomerDataService.Call
+            var call1 = new DemonstrationProject.CustomerDataWebService.Call
             {
                 Called = "07716393769",
                 Duration = "00:23:03",
                 Cost = 10.00
             };
 
-            var call2 = new DemonstrationProject.CustomerDataService.Call
+            var call2 = new DemonstrationProject.CustomerDataWebService.Call
             {
                 Called = "07881671861",
                 Duration = "00:13:03",
                 Cost = 10.10
             };
 
-            var callCharges = new DemonstrationProject.CustomerDataService.CallCharges
+            var callCharges = new DemonstrationProject.CustomerDataWebService.CallCharges
             {
                 Total = 20.10,
-                Calls = new DemonstrationProject.CustomerDataService.Call[2] { call1, call2 }
+                Calls = new DemonstrationProject.CustomerDataWebService.Call[2] { call1, call2 }
             };
 
             return callCharges;
         }
 
-        private static DemonstrationProject.CustomerDataService.Statement GetCustomerStatement()
+        private static DemonstrationProject.CustomerDataWebService.Statement GetCustomerStatement()
         {
-            var period = new DemonstrationProject.CustomerDataService.Period
+            var period = new DemonstrationProject.CustomerDataWebService.Period
             {
                 From = "2015-01-26",
                 To = "2015-02-26"
             };
 
-            var statement = new DemonstrationProject.CustomerDataService.Statement
+            var statement = new DemonstrationProject.CustomerDataWebService.Statement
             {
                 Generated = "2015-01-11",
                 Due = "2015-01-25",
@@ -83,30 +83,30 @@
             return statement;
         }
 
-        private static DemonstrationProject.CustomerDataService.SkyStore GetCustomerSkyStore()
+        private static DemonstrationProject.CustomerDataWebService.SkyStore GetCustomerSkyStore()
         {
-            var rental1 = new DemonstrationProject.CustomerDataService.Rental
+            var rental1 = new DemonstrationProject.CustomerDataWebService.Rental
             {
                 Title = "Dodgeball",
                 Cost = 2.00
             };
 
-            var rental2 = new DemonstrationProject.CustomerDataService.Rental
+            var rental2 = new DemonstrationProject.CustomerDataWebService.Rental
             {
                 Title = "Anchorman",
                 Cost = 1.50
             };
 
-            var buyAndKeep1 = new DemonstrationProject.CustomerDataService.BuyAndKeep
+            var buyAndKeep1 = new DemonstrationProject.CustomerDataWebService.BuyAndKeep
             {
                 Title = "Interstellar",
                 Cost = 13.00
             };
 
-            var skyStore = new DemonstrationProject.CustomerDataService.SkyStore
+            var skyStore = new DemonstrationProject.CustomerDataWebService.SkyStore
             {
-                Rentals = new DemonstrationProject.CustomerDataService.Rental[2] { rental1, rental2 },
-                BuyAndKeep = new DemonstrationProject.CustomerDataService.BuyAndKeep[1] { buyAndKeep1 },
+                Rentals = new DemonstrationProject.CustomerDataWebService.Rental[2] { rental1, rental2 },
+                BuyAndKeep = new DemonstrationProject.CustomerDataWebService.BuyAndKeep[1] { buyAndKeep1 },
                 Total = 16.50
             };
 

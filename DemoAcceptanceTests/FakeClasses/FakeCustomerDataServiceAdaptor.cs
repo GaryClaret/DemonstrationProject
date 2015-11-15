@@ -1,11 +1,6 @@
-﻿using DemonstrationProject.Adaptors;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DemoUnitTests.FakeClasses
+﻿using DemoAcceptanceTests;
+using DemonstrationProject.Adaptors;
+namespace DemoAcceptancetests.FakeClasses
 {
     class FakeCustomerDataServiceAdaptor : ICustomerDataServiceAdaptor
     {
