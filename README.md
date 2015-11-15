@@ -2,7 +2,7 @@
 
 This contains three projects:
 Acceptance tests - Specflow
-DemonstrationProject for website
+DemonstrationProject for website - C#/Asp.Net
 Unit tests - Visual Studio + Rhino Mocks
 
 The website containing the bill page is in demonstration project and contains a 
