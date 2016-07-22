@@ -162,6 +162,9 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
+    <Reference Include="TinyMapper">
+      <HintPath>..\packages\TinyMapper.2.0.8\lib\net45\TinyMapper.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Adaptors\CustomerDataServiceAdaptor.cs" />
@@ -223,20 +226,34 @@
     <Content Include="css\overrides.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Images\Bill-designstyle-kiddo-m.png" />
     <Content Include="Images\company_logo.jpg" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\npm.js" />
-    <Content Include="Service References\CustomerDataWebService\CustomerDataWebService.disco" />
-    <Content Include="Service References\CustomerDataWebService\configuration91.svcinfo" />
-    <Content Include="Service References\CustomerDataWebService\configuration.svcinfo" />
+    <None Include="Service References\CustomerDataWebService\configuration91.svcinfo" />
+    <None Include="Service References\CustomerDataWebService\configuration.svcinfo" />
+    <Content Include="Service References\CustomerDataWebService\CustomerDataWebService1.disco" />
     <Content Include="Service References\CustomerDataWebService\DemonstrationProject.CustomerDataWebService.RawCustomerBill.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Service References\CustomerDataWebService\Reference.svcmap">
+    <Content Include="Service References\CustomerDataWebService\CustomerDataWebService1.wsdl" />
+    <None Include="Service References\CustomerDataWebService\CustomerDataWebService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerDataWebService\CustomerDataWebService41.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerDataWebService\CustomerDataWebService42.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerDataWebService\CustomerDataWebService43.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerDataWebService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
-    </Content>
+    </None>
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -255,19 +272,7 @@
     <Content Include="Layout\_MainLayout.cshtml" />
     <None Include="Properties\PublishProfiles\DeployWeb.pubxml" />
     <Content Include="Views\Bill\CustomerBill.cshtml" />
-    <Content Include="Service References\CustomerDataWebService\CustomerDataWebService.wsdl" />
-    <None Include="Service References\CustomerDataWebService\CustomerDataWebService.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\CustomerDataWebService\CustomerDataWebService1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\CustomerDataWebService\CustomerDataWebService2.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\CustomerDataWebService\CustomerDataWebService3.xsd">
-      <SubType>Designer</SubType>
-    </None>
+    <None Include="Properties\PublishProfiles\DeployWebApadmi.pubxml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

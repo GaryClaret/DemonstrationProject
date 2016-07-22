@@ -3,6 +3,7 @@ using DemonstrationProject.DomainObjects;
 using DemonstrationProject.DomainObjects.DmCustomerBillJsonTypes;
 using DemonstrationProject.Models;
 using DemonstrationProject.Models.CustomerBillSubModels;
+using Nelibur.ObjectMapper;
 
 namespace DemonstrationProject.UIMapper
 {
@@ -24,104 +25,65 @@ namespace DemonstrationProject.UIMapper
 
         private StatementModel MapStatementToDomainStatement(Statement domainStatement)
         {
-            var statementModel = new StatementModel
-            {
-                Due = domainStatement.Due,
-                Generated = domainStatement.Generated,
-                Period = MapPeriodToDomainPeriod(domainStatement.Period)
-            };
-
+            TinyMapper.Bind<Statement, StatementModel>();
+            var statementModel = TinyMapper.Map<StatementModel>(domainStatement);
             return statementModel;
         }
 
         private PeriodModel MapPeriodToDomainPeriod(Period dmPeriod)
         {
-            var periodModel = new PeriodModel
-            {
-                From = dmPeriod.From,
-                To = dmPeriod.To
-            };
+            TinyMapper.Bind<Period, PeriodModel>();
+            var periodModel = TinyMapper.Map<PeriodModel>(dmPeriod);         
 
             return periodModel;
         }
 
         private SkyStoreModel MapSkyStoreToDomainObject(SkyStore dmSkyStore)
         {
-            var skyStoreModel = new SkyStoreModel
-            {
-                BuyAndKeep = dmSkyStore.BuyAndKeep.Select(MapBuyAndKeepToDomainObject).ToArray(),
-                Total = dmSkyStore.Total,
-                Rentals = dmSkyStore.Rentals.Select(MapRentalDomainObject).ToArray()
-            };
-
+            TinyMapper.Bind<SkyStore, SkyStoreModel>();
+            var skyStoreModel = TinyMapper.Map<SkyStoreModel>(dmSkyStore);
             return skyStoreModel;
         }
 
         private RentalModel MapRentalDomainObject(Rental dmRental)
         {
-            var rentalModel = new RentalModel
-            {
-                Cost = dmRental.Cost,
-                Title = dmRental.Title
-            };
-
+            TinyMapper.Bind<Rental, RentalModel>();
+            var rentalModel = TinyMapper.Map<RentalModel>(dmRental);
             return rentalModel;
         }
 
         private PackageModel MapPackageToDomainObject(Package dmPackage)
         {
-            var packageModel = new PackageModel
-            {
-                Subscriptions = dmPackage.Subscriptions.Select(MapSubscriptionsToDomainObject).ToArray(),
-                Total = dmPackage.Total
-            };
-
+            TinyMapper.Bind<Package, PackageModel>();
+            var packageModel = TinyMapper.Map<PackageModel>(dmPackage);          
             return packageModel;
         }
 
         private SubscriptionModel MapSubscriptionsToDomainObject(Subscription dmSubscription)
         {
-            var subscriptionModel = new SubscriptionModel
-            {
-                Cost = dmSubscription.Cost,
-                Name = dmSubscription.Name,
-                Type = dmSubscription.Type
-            };
-
+            TinyMapper.Bind<Subscription, SubscriptionModel>();
+            var subscriptionModel = TinyMapper.Map<SubscriptionModel>(dmSubscription);        
             return subscriptionModel;
         }
 
         private CallChargesModel MapCallChargesToDomainObject(CallCharges dmCallCharges)
         {          
-            var CallChargesModel = new CallChargesModel
-            {
-                Calls = dmCallCharges.Calls.Select(MapCallToDomainObject).ToArray(),
-                Total = dmCallCharges.Total
-            };
-
-            return CallChargesModel;
+            TinyMapper.Bind<CallCharges, CallChargesModel>();
+            var callChargesModel = TinyMapper.Map<CallChargesModel>(dmCallCharges);
+            return callChargesModel;
         }
 
         private CallModel MapCallToDomainObject(Call dmCall)
-        {           
-            var callModel = new CallModel
-            {
-                Called = dmCall.Called,
-                Cost = dmCall.Cost,
-                Duration = dmCall.Duration
-            };
-
+        {
+            TinyMapper.Bind<Call, CallModel>();
+            var callModel = TinyMapper.Map<CallModel>(dmCall);         
             return callModel;
         }
 
         private BuyAndKeepModel MapBuyAndKeepToDomainObject(BuyAndKeep dmBuyAndKeep)
         {
-            var buyAndKeepModel = new BuyAndKeepModel
-            {
-                Cost = dmBuyAndKeep.Cost,
-                Title = dmBuyAndKeep.Title
-            };
-
+            TinyMapper.Bind<BuyAndKeep, BuyAndKeepModel>();
+            var buyAndKeepModel = TinyMapper.Map<BuyAndKeepModel>(dmBuyAndKeep);
             return buyAndKeepModel;
         }
     }

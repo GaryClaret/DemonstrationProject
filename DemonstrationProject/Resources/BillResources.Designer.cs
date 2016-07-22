@@ -151,7 +151,7 @@ namespace DemonstrationProject.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sky Store.
+        ///   Looks up a localized string similar to Movies.
         /// </summary>
         public static string SkyStoreTitle {
             get {

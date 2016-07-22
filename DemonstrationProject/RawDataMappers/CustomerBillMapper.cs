@@ -1,5 +1,6 @@
 ﻿using DemonstrationProject.DomainObjects;
 using DemonstrationProject.DomainObjects.DmCustomerBillJsonTypes;
+using Nelibur.ObjectMapper;
 using System.Linq;
 
 namespace DemonstrationProject.RawDataMappers
@@ -38,107 +39,72 @@ namespace DemonstrationProject.RawDataMappers
 
         private Period MapPeriodToDomainPeriod(object rawPeriod)
         {
+            TinyMapper.Bind<CustomerDataWebService.Period, Period>();
             var period = (CustomerDataWebService.Period)rawPeriod;
-
-            Period domainPeriod = new Period
-            {
-                From = period.From,
-                To = period.To
-            };
+            var domainPeriod = TinyMapper.Map<Period>(period);
 
             return domainPeriod;
         }
 
         private SkyStore MapSkyStoreToDomainObject(object rawSkyStore)
         {
+            TinyMapper.Bind<CustomerDataWebService.SkyStore, SkyStore>();
             var skyStore = (CustomerDataWebService.SkyStore)rawSkyStore;
-
-            SkyStore domainSkyStore = new SkyStore
-            {
-                BuyAndKeep = skyStore.BuyAndKeep.Select(MapBuyAndKeepToDomainObject).ToArray(),
-                Total = skyStore.Total,
-                Rentals = skyStore.Rentals.Select(MapRentalDomainObject).ToArray()
-            };
+            var domainSkyStore = TinyMapper.Map<SkyStore>(skyStore);
 
             return domainSkyStore;
         }
 
         private Rental MapRentalDomainObject(object rawRental)
         {
+            TinyMapper.Bind<CustomerDataWebService.Rental, Rental>();
             var rental = (CustomerDataWebService.Rental)rawRental;
+            var domainRental = TinyMapper.Map<Rental>(rental);
 
-            var domainrental = new Rental
-            {
-                Cost = rental.Cost,
-                Title = rental.Title
-            };
-
-            return domainrental;
+            return domainRental;
         }
 
         private Package MapPackageToDomainObject(object rawPackage)
         {
+            TinyMapper.Bind<CustomerDataWebService.Package, Package>();
             var package = (CustomerDataWebService.Package)rawPackage;
-
-            Package domainPackage = new Package
-            {
-                Subscriptions = package.Subscriptions.Select(MapSubscriptionsToDomainObject).ToArray(),
-                Total = package.Total
-            };
+            var domainPackage = TinyMapper.Map<Package>(package);
 
             return domainPackage;
         }
 
         private Subscription MapSubscriptionsToDomainObject(object rawSubscription)
         {
+            TinyMapper.Bind<CustomerDataWebService.Subscription, Subscription>();
             var subscription = (CustomerDataWebService.Subscription)rawSubscription;
-
-            Subscription domainSubscription = new Subscription
-            {
-                Cost = subscription.Cost,
-                Name = subscription.Name,
-                Type = subscription.Type
-            };
+            var domainSubscription = TinyMapper.Map<Subscription>(subscription);
 
             return domainSubscription;
         }
 
         private CallCharges MapCallChargesToDomainObject(object rawCallCharges)
         {
+            TinyMapper.Bind<CustomerDataWebService.CallCharges, CallCharges>();
             var callCharges = (CustomerDataWebService.CallCharges)rawCallCharges;
-
-            CallCharges domainCallCharges = new CallCharges
-            {
-                Calls = callCharges.Calls.Select(MapCallToDomainObject).ToArray(),
-                Total = callCharges.Total
-            };
+            var domainCallCharges = TinyMapper.Map<CallCharges>(callCharges);
 
             return domainCallCharges;
         }
 
         private Call MapCallToDomainObject(object rawCall)
         {
+            TinyMapper.Bind<CustomerDataWebService.Call, Call>();
             var call = (CustomerDataWebService.Call)rawCall;
-
-            Call domainCall = new Call
-            {
-                Called = call.Called,
-                Cost = call.Cost,
-                Duration = call.Duration
-            };
+            var domainCall = TinyMapper.Map<Call>(call);
 
             return domainCall;
         }
 
         private BuyAndKeep MapBuyAndKeepToDomainObject(object rawBuyAndKeep)
         {
+            TinyMapper.Bind<CustomerDataWebService.BuyAndKeep, BuyAndKeep>();
             var buyAndKeep = (CustomerDataWebService.BuyAndKeep)rawBuyAndKeep;
-
-            BuyAndKeep domainBuyAndKeep = new BuyAndKeep
-            {
-                Cost = buyAndKeep.Cost,
-                Title = buyAndKeep.Title
-            };
+            var domainBuyAndKeep = TinyMapper.Map<BuyAndKeep>(buyAndKeep);
 
             return domainBuyAndKeep;
         }
