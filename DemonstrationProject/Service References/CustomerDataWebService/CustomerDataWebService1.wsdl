@@ -6,6 +6,8 @@
       <xsd:import schemaLocation="http://localhost:4567/CustomerDataWebService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
       <xsd:import schemaLocation="http://localhost:4567/CustomerDataWebService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/DemoWebService.RawObjects" />
       <xsd:import schemaLocation="http://localhost:4567/CustomerDataWebService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/DemoWebService.RawObjects.RawCustomerBillJsonTypes" />
+      <xsd:import schemaLocation="http://localhost:4567/CustomerDataWebService.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://localhost:4567/CustomerDataWebService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/DemoWebService.RawObjects.RawFilmShowTimesJsonTypes" />
     </xsd:schema>
   </wsdl:types>
   <wsdl:message name="ICustomerDataWebService_GetCustomerBill_InputMessage">
@@ -14,16 +16,35 @@
   <wsdl:message name="ICustomerDataWebService_GetCustomerBill_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetCustomerBillResponse" />
   </wsdl:message>
+  <wsdl:message name="ICustomerDataWebService_GetFilmShowTimes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFilmShowTimes" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerDataWebService_GetFilmShowTimes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFilmShowTimesResponse" />
+  </wsdl:message>
   <wsdl:portType name="ICustomerDataWebService">
     <wsdl:operation name="GetCustomerBill">
       <wsdl:input wsaw:Action="http://tempuri.org/ICustomerDataWebService/GetCustomerBill" message="tns:ICustomerDataWebService_GetCustomerBill_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/ICustomerDataWebService/GetCustomerBillResponse" message="tns:ICustomerDataWebService_GetCustomerBill_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFilmShowTimes">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICustomerDataWebService/GetFilmShowTimes" message="tns:ICustomerDataWebService_GetFilmShowTimes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICustomerDataWebService/GetFilmShowTimesResponse" message="tns:ICustomerDataWebService_GetFilmShowTimes_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_ICustomerDataWebService" type="tns:ICustomerDataWebService">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="GetCustomerBill">
       <soap:operation soapAction="http://tempuri.org/ICustomerDataWebService/GetCustomerBill" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFilmShowTimes">
+      <soap:operation soapAction="http://tempuri.org/ICustomerDataWebService/GetFilmShowTimes" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

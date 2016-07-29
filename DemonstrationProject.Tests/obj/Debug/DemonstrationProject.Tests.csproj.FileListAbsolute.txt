@@ -26,3 +26,4 @@
 \\psf\home\documents\visual studio 2012\Projects\DemonstrationProject\DemonstrationProject.Tests\bin\Debug\SimpleInjector.Integration.Web.Mvc.dll
 \\psf\home\documents\visual studio 2012\Projects\DemonstrationProject\DemonstrationProject.Tests\bin\Debug\SimpleInjector.xml
 \\psf\home\documents\visual studio 2012\Projects\DemonstrationProject\DemonstrationProject.Tests\bin\Debug\SimpleInjector.Integration.Web.Mvc.xml
+\\psf\Home\Documents\Visual Studio 2012\Projects\DemonstrationProject\DemonstrationProject.Tests\bin\Debug\TinyMapper.dll

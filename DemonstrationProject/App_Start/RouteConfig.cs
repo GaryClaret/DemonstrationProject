@@ -18,6 +18,12 @@ namespace DemonstrationProject
                 url: "CustomerBill",
                 defaults: new { controller = "Bill", action = "Index"}
             );
+
+            routes.MapRoute(
+                name: "FilmShowTimes",
+                url: "FilmShowTimes",
+                defaults: new { controller = "FilmShowTime", action = "Index" }
+            );
         }
     }
 }

@@ -8,5 +8,11 @@ namespace DemoAcceptancetests.FakeClasses
         {
             return FakeBillData.GetFakeBill();
         }
+
+
+        public object ProvideFilmShowTimes()
+        {
+            return null;
+        }
     }
 }

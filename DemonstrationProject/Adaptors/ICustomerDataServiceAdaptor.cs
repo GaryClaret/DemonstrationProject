@@ -10,5 +10,6 @@ namespace DemonstrationProject.Adaptors
     public interface ICustomerDataServiceAdaptor
     {
         object ProvideCustomerBill();
+        object ProvideFilmShowTimes();
     }
 }

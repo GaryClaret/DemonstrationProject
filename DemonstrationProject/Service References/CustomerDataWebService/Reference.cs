@@ -744,6 +744,255 @@ namespace DemonstrationProject.CustomerDataWebService {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="RawFilmShowTime", Namespace="http://schemas.datacontract.org/2004/07/DemoWebService.RawObjects")]
+    [System.SerializableAttribute()]
+    public partial class RawFilmShowTime : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string[] directorsField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string longDescriptionField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string releaseYearField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string runTimeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private DemonstrationProject.CustomerDataWebService.ShowTimes[] showtimesField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string titleField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string[] topCastField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string[] directors {
+            get {
+                return this.directorsField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.directorsField, value) != true)) {
+                    this.directorsField = value;
+                    this.RaisePropertyChanged("directors");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string longDescription {
+            get {
+                return this.longDescriptionField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.longDescriptionField, value) != true)) {
+                    this.longDescriptionField = value;
+                    this.RaisePropertyChanged("longDescription");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string releaseYear {
+            get {
+                return this.releaseYearField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.releaseYearField, value) != true)) {
+                    this.releaseYearField = value;
+                    this.RaisePropertyChanged("releaseYear");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string runTime {
+            get {
+                return this.runTimeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.runTimeField, value) != true)) {
+                    this.runTimeField = value;
+                    this.RaisePropertyChanged("runTime");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public DemonstrationProject.CustomerDataWebService.ShowTimes[] showtimes {
+            get {
+                return this.showtimesField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.showtimesField, value) != true)) {
+                    this.showtimesField = value;
+                    this.RaisePropertyChanged("showtimes");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string title {
+            get {
+                return this.titleField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.titleField, value) != true)) {
+                    this.titleField = value;
+                    this.RaisePropertyChanged("title");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string[] topCast {
+            get {
+                return this.topCastField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.topCastField, value) != true)) {
+                    this.topCastField = value;
+                    this.RaisePropertyChanged("topCast");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="ShowTimes", Namespace="http://schemas.datacontract.org/2004/07/DemoWebService.RawObjects.RawFilmShowTime" +
+        "sJsonTypes")]
+    [System.SerializableAttribute()]
+    public partial class ShowTimes : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string dateTimeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private DemonstrationProject.CustomerDataWebService.Theatre theatreField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string dateTime {
+            get {
+                return this.dateTimeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.dateTimeField, value) != true)) {
+                    this.dateTimeField = value;
+                    this.RaisePropertyChanged("dateTime");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public DemonstrationProject.CustomerDataWebService.Theatre theatre {
+            get {
+                return this.theatreField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.theatreField, value) != true)) {
+                    this.theatreField = value;
+                    this.RaisePropertyChanged("theatre");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Theatre", Namespace="http://schemas.datacontract.org/2004/07/DemoWebService.RawObjects.RawFilmShowTime" +
+        "sJsonTypes")]
+    [System.SerializableAttribute()]
+    public partial class Theatre : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string nameField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string name {
+            get {
+                return this.nameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.nameField, value) != true)) {
+                    this.nameField = value;
+                    this.RaisePropertyChanged("name");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="CustomerDataWebService.ICustomerDataWebService")]
     public interface ICustomerDataWebService {
@@ -753,6 +1002,12 @@ namespace DemonstrationProject.CustomerDataWebService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICustomerDataWebService/GetCustomerBill", ReplyAction="http://tempuri.org/ICustomerDataWebService/GetCustomerBillResponse")]
         System.Threading.Tasks.Task<DemonstrationProject.CustomerDataWebService.RawCustomerBill> GetCustomerBillAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICustomerDataWebService/GetFilmShowTimes", ReplyAction="http://tempuri.org/ICustomerDataWebService/GetFilmShowTimesResponse")]
+        DemonstrationProject.CustomerDataWebService.RawFilmShowTime[] GetFilmShowTimes();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICustomerDataWebService/GetFilmShowTimes", ReplyAction="http://tempuri.org/ICustomerDataWebService/GetFilmShowTimesResponse")]
+        System.Threading.Tasks.Task<DemonstrationProject.CustomerDataWebService.RawFilmShowTime[]> GetFilmShowTimesAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -788,6 +1043,14 @@ namespace DemonstrationProject.CustomerDataWebService {
         
         public System.Threading.Tasks.Task<DemonstrationProject.CustomerDataWebService.RawCustomerBill> GetCustomerBillAsync() {
             return base.Channel.GetCustomerBillAsync();
+        }
+        
+        public DemonstrationProject.CustomerDataWebService.RawFilmShowTime[] GetFilmShowTimes() {
+            return base.Channel.GetFilmShowTimes();
+        }
+        
+        public System.Threading.Tasks.Task<DemonstrationProject.CustomerDataWebService.RawFilmShowTime[]> GetFilmShowTimesAsync() {
+            return base.Channel.GetFilmShowTimesAsync();
         }
     }
 }

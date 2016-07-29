@@ -31,3 +31,4 @@
 \\psf\home\documents\visual studio 2012\Projects\DemonstrationProject\DemoAcceptanceTests\bin\Debug\System.Web.WebPages.Deployment.xml
 \\psf\home\documents\visual studio 2012\Projects\DemonstrationProject\DemoAcceptanceTests\bin\Debug\System.Web.WebPages.Razor.xml
 \\psf\home\documents\visual studio 2012\Projects\DemonstrationProject\DemoAcceptanceTests\bin\Debug\Newtonsoft.Json.xml
+\\psf\Home\Documents\Visual Studio 2012\Projects\DemonstrationProject\DemoAcceptanceTests\bin\Debug\TinyMapper.dll

@@ -16,5 +16,11 @@ namespace DemonstrationProject.Adaptors
         {
            return _customerDataService.Proxy.GetCustomerBill();
         }
+
+
+        public object ProvideFilmShowTimes()
+        {
+            return _customerDataService.Proxy.GetFilmShowTimes();
+        }
     }
 }

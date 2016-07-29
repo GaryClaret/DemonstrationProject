@@ -171,10 +171,13 @@
     <Compile Include="Adaptors\ICustomerDataServiceAdaptor.cs" />
     <Compile Include="App_Start\SimpleInjectorImpl.cs" />
     <Compile Include="BusinessLogic\CustomerBl.cs" />
+    <Compile Include="BusinessLogic\FilmShowTimeBl.cs" />
     <Compile Include="BusinessLogic\ICustomerBl.cs" />
+    <Compile Include="BusinessLogic\IMovieShowTime.cs" />
     <Compile Include="Controllers\BillController.cs" />
-    <Compile Include="CustumerDataService\CallDataService.cs" />
-    <Compile Include="CustumerDataService\ICallCustomerDataService.cs" />
+    <Compile Include="Controllers\FilmShowTimeController.cs" />
+    <Compile Include="CustomerDataService\CallDataService.cs" />
+    <Compile Include="CustomerDataService\ICallCustomerDataService.cs" />
     <Compile Include="DomainObjects\DmCustomerBill.cs" />
     <Compile Include="DomainObjects\DmCustomerBillJsonTypes\BuyAndKeep.cs" />
     <Compile Include="DomainObjects\DmCustomerBillJsonTypes\Call.cs" />
@@ -185,6 +188,9 @@
     <Compile Include="DomainObjects\DmCustomerBillJsonTypes\SkyStore.cs" />
     <Compile Include="DomainObjects\DmCustomerBillJsonTypes\Statement.cs" />
     <Compile Include="DomainObjects\DmCustomerBillJsonTypes\Subscription.cs" />
+    <Compile Include="DomainObjects\DmFilmShowTime.cs" />
+    <Compile Include="DomainObjects\DmFilmShowTimeTypes\ShowTimes.cs" />
+    <Compile Include="DomainObjects\DmFilmShowTimeTypes\Theatre.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -198,9 +204,13 @@
     <Compile Include="Models\CustomerBillSubModels\SkyStoreModel.cs" />
     <Compile Include="Models\CustomerBillSubModels\StatementModel.cs" />
     <Compile Include="Models\CustomerBillSubModels\SubscriptionModel.cs" />
+    <Compile Include="Models\FilmHeaderModel.cs" />
+    <Compile Include="Models\FilmShowTimeModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RawDataMappers\CustomerBillMapper.cs" />
+    <Compile Include="RawDataMappers\FilmShowTimeMapper.cs" />
     <Compile Include="RawDataMappers\ICustomerBillMapper.cs" />
+    <Compile Include="RawDataMappers\IFilmShowTimeMapper.cs" />
     <Compile Include="Resources\BillResources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -213,7 +223,9 @@
     </Compile>
     <Compile Include="UIControllers\UICustomerBillController.cs" />
     <Compile Include="UIMapper\CustomerModelMapper.cs" />
+    <Compile Include="UIMapper\FilmShowTimeModelMapper.cs" />
     <Compile Include="UIMapper\ICustomerModelMapper.cs" />
+    <Compile Include="UIMapper\IFilmShowTimeModelMapper.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\FilterConfig.cs" />
@@ -233,11 +245,17 @@
     <Content Include="js\npm.js" />
     <None Include="Service References\CustomerDataWebService\configuration91.svcinfo" />
     <None Include="Service References\CustomerDataWebService\configuration.svcinfo" />
-    <Content Include="Service References\CustomerDataWebService\CustomerDataWebService1.disco" />
+    <None Include="Service References\CustomerDataWebService\CustomerDataWebService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerDataWebService\CustomerDataWebService1.disco" />
     <Content Include="Service References\CustomerDataWebService\DemonstrationProject.CustomerDataWebService.RawCustomerBill.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Service References\CustomerDataWebService\CustomerDataWebService1.wsdl" />
+    <None Include="Service References\CustomerDataWebService\CustomerDataWebService1.wsdl" />
+    <None Include="Service References\CustomerDataWebService\CustomerDataWebService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Service References\CustomerDataWebService\CustomerDataWebService4.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -250,11 +268,16 @@
     <None Include="Service References\CustomerDataWebService\CustomerDataWebService43.xsd">
       <SubType>Designer</SubType>
     </None>
+    <Content Include="Service References\CustomerDataWebService\DemonstrationProject.CustomerDataWebService.RawFilmShowTime.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Service References\CustomerDataWebService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -273,6 +296,7 @@
     <None Include="Properties\PublishProfiles\DeployWeb.pubxml" />
     <Content Include="Views\Bill\CustomerBill.cshtml" />
     <None Include="Properties\PublishProfiles\DeployWebApadmi.pubxml" />
+    <Content Include="Views\FilmShowTime\FilmShowTimes.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

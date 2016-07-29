@@ -1,0 +1,19 @@
+﻿@model DemonstrationProject.Models.FilmHeaderModel
+
+@{
+    ViewBag.Title = "FilmShowTimes";
+    Layout = "~/Layout/_MainLayout.cshtml";
+}
+
+<h2>FilmShowTimes</h2>
+
+<div class="container">
+    <div class="page-header">
+        @foreach (var item in Model.movies)
+        {
+            <div>@item.title</div>
+            <div>@item.director</div>
+            <div>@item.longDesc</div>
+        }
+    </div>
+</div>

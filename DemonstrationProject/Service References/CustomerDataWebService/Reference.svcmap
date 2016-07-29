@@ -23,6 +23,8 @@
   </MetadataSources>
   <Metadata>
     <MetadataFile FileName="CustomerDataWebService4.xsd" MetadataType="Schema" ID="6562edaf-f1b5-42d2-a4e6-e478d73f1f35" SourceId="1" SourceUrl="http://localhost:4567/CustomerDataWebService.svc?xsd=xsd2" />
+    <MetadataFile FileName="CustomerDataWebService.xsd" MetadataType="Schema" ID="989031e8-5437-4a8d-8849-7fde9f2f6077" SourceId="1" SourceUrl="http://localhost:4567/CustomerDataWebService.svc?xsd=xsd5" />
+    <MetadataFile FileName="CustomerDataWebService1.xsd" MetadataType="Schema" ID="f8e72058-e4c0-4764-9a39-11f974925a77" SourceId="1" SourceUrl="http://localhost:4567/CustomerDataWebService.svc?xsd=xsd4" />
     <MetadataFile FileName="CustomerDataWebService1.disco" MetadataType="Disco" ID="f3279cc8-b9b2-4054-ac0e-33537af85a05" SourceId="1" SourceUrl="http://localhost:4567/CustomerDataWebService.svc?disco" />
     <MetadataFile FileName="CustomerDataWebService1.wsdl" MetadataType="Wsdl" ID="de6c1c12-4706-4c65-b661-d2381bf63f29" SourceId="1" SourceUrl="http://localhost:4567/CustomerDataWebService.svc?wsdl" />
     <MetadataFile FileName="CustomerDataWebService41.xsd" MetadataType="Schema" ID="3d4f73cd-0410-4cc1-8630-e8b31b891a57" SourceId="1" SourceUrl="http://localhost:4567/CustomerDataWebService.svc?xsd=xsd1" />

@@ -25,6 +25,10 @@ namespace DemonstrationProject.App_Start
             container.Register<ICustomerBillMapper, CustomerBillMapper>();
             container.Register<ICustomerModelMapper,CustomerModelMapper>();
             container.Register<ICustomerDataServiceAdaptor, CustomerDataServiceAdaptor>();
+
+            container.Register<IFilmShowTimeBl, FilmShowTimeBl>();
+            container.Register<IFilmShowTimeMapper, FilmShowTimeMapper>();
+            container.Register<IFilmShowTimeModelMapper, FilmShowTimeModelMapper>();
             
             container.Register<ICallCustomerDataService,CallDataService>(Lifestyle.Singleton);
             
