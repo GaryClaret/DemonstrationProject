@@ -24,6 +24,12 @@ namespace DemonstrationProject
                 url: "FilmShowTimes",
                 defaults: new { controller = "FilmShowTime", action = "Index" }
             );
+
+            routes.MapRoute(
+                name: "ReactFilmShowTimes",
+                url: "ReactFilmShowTimes",
+                defaults: new { controller = "FilmShowTime", action = "Showtimes" }
+            );
         }
     }
 }

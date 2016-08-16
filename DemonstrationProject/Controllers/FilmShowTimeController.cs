@@ -18,10 +18,14 @@ namespace DemonstrationProject.Controllers
 
         public ActionResult Index()
         {
-            var domainShowtimes = _filmShowTimeBusiness.ProvideFilmShowTimes();
-            var model = _filmShowTimeBusiness.ProvideFilmShowTimeModel(domainShowtimes);
-            return View("FilmShowTimes", model);
+            return View("ReactFilmShowTimes");
         }
 
+        public ActionResult Showtimes()
+        {
+            var domainShowtimes = _filmShowTimeBusiness.ProvideFilmShowTimes();
+            var model = _filmShowTimeBusiness.ProvideFilmShowTimeModel(domainShowtimes);
+            return Json(model, JsonRequestBehavior.AllowGet);
+        }
     }
 }
