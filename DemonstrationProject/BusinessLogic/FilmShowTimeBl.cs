@@ -23,9 +23,9 @@ namespace DemonstrationProject.BusinessLogic
             _modelMapper = modelMapper;
         }
 
-        public List<DomainObjects.DmFilmShowTime> ProvideFilmShowTimes()
+        public List<DomainObjects.DmFilmShowTime> ProvideFilmShowTimes(string dateOfShowings)
         {
-            return _filmShowMapper.MapRawFilmShowTimeToDomain(_ds.ProvideFilmShowTimes());
+            return _filmShowMapper.MapRawFilmShowTimeToDomain(_ds.ProvideFilmShowTimes(dateOfShowings));
         }
 
         public FilmHeaderModel ProvideFilmShowTimeModel(List<DmFilmShowTime> domainFilmTimesList)

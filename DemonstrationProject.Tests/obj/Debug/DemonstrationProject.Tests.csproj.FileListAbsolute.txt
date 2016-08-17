@@ -27,3 +27,8 @@
 \\psf\home\documents\visual studio 2012\Projects\DemonstrationProject\DemonstrationProject.Tests\bin\Debug\SimpleInjector.xml
 \\psf\home\documents\visual studio 2012\Projects\DemonstrationProject\DemonstrationProject.Tests\bin\Debug\SimpleInjector.Integration.Web.Mvc.xml
 \\psf\Home\Documents\Visual Studio 2012\Projects\DemonstrationProject\DemonstrationProject.Tests\bin\Debug\TinyMapper.dll
+\\psf\home\documents\visual studio 2012\Projects\DemonstrationProject\DemonstrationProject.Tests\bin\Debug\ClearScript.V8\ClearScriptV8-32.dll
+\\psf\home\documents\visual studio 2012\Projects\DemonstrationProject\DemonstrationProject.Tests\bin\Debug\ClearScript.V8\ClearScriptV8-64.dll
+\\psf\home\documents\visual studio 2012\Projects\DemonstrationProject\DemonstrationProject.Tests\bin\Debug\ClearScript.V8\v8-ia32.dll
+\\psf\home\documents\visual studio 2012\Projects\DemonstrationProject\DemonstrationProject.Tests\bin\Debug\ClearScript.V8\v8-x64.dll
+\\psf\home\documents\visual studio 2012\Projects\DemonstrationProject\DemonstrationProject.Tests\bin\Debug\WebActivatorEx.dll

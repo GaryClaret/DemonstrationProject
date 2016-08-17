@@ -10,7 +10,7 @@ namespace DemonstrationProject.BusinessLogic
 {
     public interface IFilmShowTimeBl
     {
-        List<DmFilmShowTime> ProvideFilmShowTimes();
+        List<DmFilmShowTime> ProvideFilmShowTimes(string dateOfShowings);
         FilmHeaderModel ProvideFilmShowTimeModel(List<DmFilmShowTime> domainFilmTimesList);
     }
 }

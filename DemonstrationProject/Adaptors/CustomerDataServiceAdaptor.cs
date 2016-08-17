@@ -17,10 +17,9 @@ namespace DemonstrationProject.Adaptors
            return _customerDataService.Proxy.GetCustomerBill();
         }
 
-
-        public object ProvideFilmShowTimes()
+        public object ProvideFilmShowTimes(string dateOfShowings)
         {
-            return _customerDataService.Proxy.GetFilmShowTimes();
+            return _customerDataService.Proxy.GetFilmShowTimes(dateOfShowings);
         }
     }
 }

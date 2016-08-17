@@ -1004,10 +1004,10 @@ namespace DemonstrationProject.CustomerDataWebService {
         System.Threading.Tasks.Task<DemonstrationProject.CustomerDataWebService.RawCustomerBill> GetCustomerBillAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICustomerDataWebService/GetFilmShowTimes", ReplyAction="http://tempuri.org/ICustomerDataWebService/GetFilmShowTimesResponse")]
-        DemonstrationProject.CustomerDataWebService.RawFilmShowTime[] GetFilmShowTimes();
+        DemonstrationProject.CustomerDataWebService.RawFilmShowTime[] GetFilmShowTimes(string dateofShowings);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICustomerDataWebService/GetFilmShowTimes", ReplyAction="http://tempuri.org/ICustomerDataWebService/GetFilmShowTimesResponse")]
-        System.Threading.Tasks.Task<DemonstrationProject.CustomerDataWebService.RawFilmShowTime[]> GetFilmShowTimesAsync();
+        System.Threading.Tasks.Task<DemonstrationProject.CustomerDataWebService.RawFilmShowTime[]> GetFilmShowTimesAsync(string dateofShowings);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -1045,12 +1045,12 @@ namespace DemonstrationProject.CustomerDataWebService {
             return base.Channel.GetCustomerBillAsync();
         }
         
-        public DemonstrationProject.CustomerDataWebService.RawFilmShowTime[] GetFilmShowTimes() {
-            return base.Channel.GetFilmShowTimes();
+        public DemonstrationProject.CustomerDataWebService.RawFilmShowTime[] GetFilmShowTimes(string dateofShowings) {
+            return base.Channel.GetFilmShowTimes(dateofShowings);
         }
         
-        public System.Threading.Tasks.Task<DemonstrationProject.CustomerDataWebService.RawFilmShowTime[]> GetFilmShowTimesAsync() {
-            return base.Channel.GetFilmShowTimesAsync();
+        public System.Threading.Tasks.Task<DemonstrationProject.CustomerDataWebService.RawFilmShowTime[]> GetFilmShowTimesAsync(string dateofShowings) {
+            return base.Channel.GetFilmShowTimesAsync(dateofShowings);
         }
     }
 }

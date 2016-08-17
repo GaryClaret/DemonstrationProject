@@ -21,9 +21,19 @@ namespace DemonstrationProject.Controllers
             return View("ReactFilmShowTimes");
         }
 
+        [HttpGet]
         public ActionResult Showtimes()
         {
-            var domainShowtimes = _filmShowTimeBusiness.ProvideFilmShowTimes();
+            var showtimeDate = "2016-08-17";
+            var domainShowtimes = _filmShowTimeBusiness.ProvideFilmShowTimes(showtimeDate);
+            var model = _filmShowTimeBusiness.ProvideFilmShowTimeModel(domainShowtimes);
+            return Json(model, JsonRequestBehavior.AllowGet);
+        }
+
+        [HttpPost]
+        public ActionResult ShowtimesWithDate()
+        {
+            var domainShowtimes = _filmShowTimeBusiness.ProvideFilmShowTimes(this.HttpContext.Request.Params["dateOfShowings"]);
             var model = _filmShowTimeBusiness.ProvideFilmShowTimeModel(domainShowtimes);
             return Json(model, JsonRequestBehavior.AllowGet);
         }

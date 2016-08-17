@@ -32,3 +32,8 @@
 \\psf\home\documents\visual studio 2012\Projects\DemonstrationProject\DemoAcceptanceTests\bin\Debug\System.Web.WebPages.Razor.xml
 \\psf\home\documents\visual studio 2012\Projects\DemonstrationProject\DemoAcceptanceTests\bin\Debug\Newtonsoft.Json.xml
 \\psf\Home\Documents\Visual Studio 2012\Projects\DemonstrationProject\DemoAcceptanceTests\bin\Debug\TinyMapper.dll
+\\psf\home\documents\visual studio 2012\Projects\DemonstrationProject\DemoAcceptanceTests\bin\Debug\ClearScript.V8\ClearScriptV8-32.dll
+\\psf\home\documents\visual studio 2012\Projects\DemonstrationProject\DemoAcceptanceTests\bin\Debug\ClearScript.V8\ClearScriptV8-64.dll
+\\psf\home\documents\visual studio 2012\Projects\DemonstrationProject\DemoAcceptanceTests\bin\Debug\ClearScript.V8\v8-ia32.dll
+\\psf\home\documents\visual studio 2012\Projects\DemonstrationProject\DemoAcceptanceTests\bin\Debug\ClearScript.V8\v8-x64.dll
+\\psf\home\documents\visual studio 2012\Projects\DemonstrationProject\DemoAcceptanceTests\bin\Debug\WebActivatorEx.dll

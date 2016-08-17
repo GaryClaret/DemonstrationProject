@@ -76,4 +76,3 @@
 \\psf\home\documents\visual studio 2012\Projects\DemonstrationProject\DemonstrationProject\bin\ru-ru\JavaScriptEngineSwitcher.Core.resources.dll
 \\psf\home\documents\visual studio 2012\Projects\DemonstrationProject\DemonstrationProject\bin\ru-ru\JavaScriptEngineSwitcher.V8.resources.dll
 \\psf\home\documents\visual studio 2012\Projects\DemonstrationProject\DemonstrationProject\bin\ru-ru\MsieJavaScriptEngine.resources.dll
-\\psf\home\documents\visual studio 2012\Projects\DemonstrationProject\DemonstrationProject\obj\Debug\DemonstrationProject.csprojResolveAssemblyReference.cache
